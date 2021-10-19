@@ -10,15 +10,18 @@ namespace Loops_Assignment
     {
         static int x = 0;
         static int y = 0;
+        static bool gameOver = false;
         static void Main(string[] args)
         {
-            bool gameOver = false;
+            
 
             while (gameOver == false)
             {
                 PlayerDraw(x, y);
                 PlayerUpdate();
             }
+
+            
         }
 
         static void PlayerDraw(int x, int y)
@@ -77,11 +80,16 @@ namespace Loops_Assignment
                     x = Console.WindowWidth - 1;
                 }
             }
-
+            
+            else if (readKeyInput.Key == ConsoleKey.Escape)
+            {
+                gameOver = true;
+            }
 
 
         }
-        static void clear()
+    
+   static void clear()
         {
             Console.SetCursorPosition(x, y);
             Console.Write(" ");
