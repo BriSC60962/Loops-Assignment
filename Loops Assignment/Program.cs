@@ -77,11 +77,11 @@ namespace Loops_Assignment
                 x = x + 1;
                 if (x >= Console.WindowWidth)
                 {
-                    x = Console.WindowWidth - 1;
+                    x = Console.WindowWidth - 1; // to prevent the program from crashing at the border I subtracted 1 from the x value.
                 }
             }
             
-            else if (readKeyInput.Key == ConsoleKey.Escape)
+            else if (readKeyInput.Key == ConsoleKey.Escape) //Exits Program
             {
                 gameOver = true;
             }
