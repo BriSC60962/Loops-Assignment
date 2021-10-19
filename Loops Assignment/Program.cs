@@ -70,7 +70,7 @@ namespace Loops_Assignment
             }
             else if (input == 'd')
             {
-                clear();
+                clear(); // prevents player trail
                 x = x + 1;
                 if (x >= Console.WindowWidth)
                 {
