@@ -24,7 +24,7 @@ namespace Loops_Assignment
         static void PlayerDraw(int x, int y)
         {
 
-            Console.SetCursorPosition(x, y);
+            Console.SetCursorPosition(x, y); // setting the position of the player on screen to (x, y) or (0,0)
 
             Console.Write("R"); // "R" is the Person/Player you control
 
